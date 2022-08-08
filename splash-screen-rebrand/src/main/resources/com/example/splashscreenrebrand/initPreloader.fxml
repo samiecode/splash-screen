@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="rootScene" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.splashscreenrebrand.InitPreloader">
+   <children>
+      <ImageView id="imageView" fx:id="imageView" fitHeight="300.0" fitWidth="530.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0">
+         <image>
+            <!--<Image url="@../../../../../../splashscreen.jpg" />-->
+         </image></ImageView>
+      <Label fx:id="loading" layoutX="15.0" layoutY="268.0" prefHeight="17.0" prefWidth="495.0" text="Loading..." AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="268.0" />
+      <Rectangle fx:id="path" arcHeight="5.0" arcWidth="5.0" fill="#d7d7d7" height="9.0" layoutY="292.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="530.0" />
+      <Rectangle fx:id="scrollBar" arcHeight="10.0" arcWidth="10.0" fill="#cb2095" height="9.0" layoutY="292.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="530.0" />
+   </children>
+</AnchorPane>
