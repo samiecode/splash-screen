@@ -30,7 +30,7 @@ public class InitPreloader implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         loadingAuto = loading;
-        imageView.setImage(new Image(getClass().getResourceAsStream("splashscreen.jpg")));
+        imageView.setImage(new Image(getClass().getResourceAsStream("images/splashscreen.jpg")));
 
         double sceneWidth = 530;
         double scrollBarWidth = scrollBar.getLayoutBounds().getWidth();
@@ -90,7 +90,7 @@ public class InitPreloader implements Initializable {
                 try {
                     Thread.sleep(2000);
                     Stage stage = new Stage();
-                    FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/main.fxml"));
                     Scene scene = new Scene(fxmlLoader.load());
                     stage.setScene(scene);
                     stage.setResizable(false);

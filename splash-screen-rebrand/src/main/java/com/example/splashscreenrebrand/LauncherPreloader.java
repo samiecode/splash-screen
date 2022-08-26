@@ -15,7 +15,7 @@ public class LauncherPreloader extends Preloader {
     @Override
     public void start(Stage primaryStage) throws IOException {
         this.preloaderStage = primaryStage;
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("initPreloader.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("fxml/initPreloader.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         primaryStage.setTitle("Splash Screen");
         primaryStage.setScene(scene);
